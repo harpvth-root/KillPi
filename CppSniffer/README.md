@@ -9,4 +9,5 @@ To do:
 - Grab error code for network disconnect before running pcap_close()
 - Add arguments to make BPF filter optional and/or have multiple target machines be fed into BPF filter.
 - Make printing packet data to terminal faster
+- Find a way to reduce disk space consumption of packet_log.txt
 
