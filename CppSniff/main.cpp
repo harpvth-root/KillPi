@@ -12,7 +12,7 @@ void log_output (std::ofstream& file, const std::string& text) {
     file << text;
 }
 
-//
+//Packet handler takes packet metadata and date then logs it to console and text file
 void packet_handler(u_char* user_data, const struct pcap_pkthdr* pkthdr, const u_char* packet) {
     std::ofstream* logfile = reinterpret_cast<std::ofstream*>(user_data);
     std::string line = "\n=================== PACKET CAPTURED ===================\n";
